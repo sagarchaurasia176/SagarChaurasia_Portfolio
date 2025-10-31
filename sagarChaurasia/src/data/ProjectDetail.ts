@@ -41,4 +41,6 @@ export const projects: Project[] = [
     githubUrl:
       "https://github.com/sagarchaurasia176/Code-Analyzer-chrome-extension",
   },
+
+  
 ];

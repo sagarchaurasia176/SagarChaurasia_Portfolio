@@ -9,12 +9,12 @@ import SkillsPage from "./Skills/SkillPage,";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+    <div className="min-h-screen">
       <Navbar />
 
       {/* Page Container */}
       <div className=" sm:max-w-7xl lg:max-w-5xl xl:5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="bg-gradient-to-br from-gray-100 to-gray-100 rounded-2xl shadow-2xl overflow-hidden border border-gray-700 hover:bg-gradient-to-t transition-all duration-500 ease-in-out">
           {/* Hero / Intro Section */}
           <HomePage />
 

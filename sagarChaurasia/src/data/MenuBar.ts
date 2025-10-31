@@ -1,10 +1,10 @@
-import { Home, Info, BookOpen, StickyNote, Projector, Terminal,FolderRoot, Folder } from "lucide-react";
+import {Info, BookOpen, StickyNote, Projector, Terminal,FolderRoot, Folder } from "lucide-react";
 
 export const Menubar = [
     {
-        title: "Home",
-        icon: Home,
-        link: "#Home"
+        title: "My Blog",
+        icon: BookOpen,
+        link: "https://dops.dev-saga.in/"
     },
     {
         title: "About",
@@ -15,7 +15,7 @@ export const Menubar = [
     {
         title: "Certificates",
         icon: StickyNote,
-        link: "#Certificates"
+        link: "#certificates"
     },
     {
         title: "skills",
@@ -40,6 +40,6 @@ export const Menubar = [
     {
         title: "Github",
         icon: Terminal,
-        link: "#Certifications-section-1"
+        link: "https://github.com/sagarchaurasia176"
     }
 ];
