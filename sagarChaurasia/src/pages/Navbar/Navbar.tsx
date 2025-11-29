@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-white shadow-md backdrop-blur-sm">
       <div className="container mx-auto px-4 flex items-center justify-center h-16">
       
         {/* Center: Desktop Navigation Links */}
@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
             <li key={link.title}>
               <a
                 href={link.link}
+                target={link.target}
                 className="flex items-center text-gray-700 hover:text-blue-500 transition-colors font-medium"
               >
                 {link.icon && (

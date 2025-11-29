@@ -1,11 +1,14 @@
 import { Briefcase, Calendar } from "lucide-react";
 import ExperienceData from "../../data/ExperienceData";
+import { JSX } from "react/jsx-runtime";
 
 export default function ExperiencePage() {
   function highlightText(text: string) {
     const keywords = [
-      "MERN stack",
-      "Next.js",
+      "HTML",
+      "CSS",
+      "JavASCRIPT",
+      "Tailwind CSS",
       "Docker",
       "Prisma ORM",
       "Postgres",
@@ -19,25 +22,85 @@ export default function ExperiencePage() {
       "RESTful APIs",
       "Agile",
       "Apache server",
+      "Admin Dashboard",
+      "HR",
+      "Admin",
+      "Marketing",
+      "feedback",
+      " high-quality solutions",
+      "project lifecycles"
     ];
 
-    let highlighted = text;
+    // Split text into parts and highlight keywords
+    const parts = [];
+    let currentText = text;
+    let lastIndex = 0;
 
-    // Highlight tech keywords
-    keywords.forEach((keyword) => {
-      highlighted = highlighted.replace(
-        new RegExp(`(${keyword})`, "gi"),
-        `<span class="font-extrabold">$1</span>`
+    // Create a regex pattern for all keywords
+    const keywordPattern = new RegExp(`\\b(${keywords.join("|")})\\b`, "gi");
+
+    // Find all keyword matches
+    let match;
+    while ((match = keywordPattern.exec(text)) !== null) {
+      // Add text before the match
+      if (match.index > lastIndex) {
+        parts.push(text.slice(lastIndex, match.index));
+      }
+      // Add highlighted keyword
+      parts.push(
+        <span
+          key={`keyword-${match.index}`}
+          className="font-bold text-slate-900"
+        >
+          {match[0]}
+        </span>
       );
+
+      lastIndex = match.index + match[0].length;
+    }
+
+    // Add remaining text
+    if (lastIndex < text.length) {
+      parts.push(text.slice(lastIndex));
+    }
+
+    // Highlight numbers and percentages in the remaining text parts
+    const finalParts: (string | JSX.Element)[] = [];
+    parts.forEach((part, index) => {
+      if (typeof part === "string") {
+        const numberPattern = /(\d+(?:\.\d+)?%?)/g;
+        const textParts = [];
+        let lastIdx = 0;
+        let numberMatch;
+
+        while ((numberMatch = numberPattern.exec(part)) !== null) {
+          if (numberMatch.index > lastIdx) {
+            textParts.push(part.slice(lastIdx, numberMatch.index));
+          }
+
+          textParts.push(
+            <span
+              key={`number-${index}-${numberMatch.index}`}
+              className="font-bold text-zinc-900"
+            >
+              {numberMatch[0]}
+            </span>
+          );
+
+          lastIdx = numberMatch.index + numberMatch[0].length;
+        }
+
+        if (lastIdx < part.length) {
+          textParts.push(part.slice(lastIdx));
+        }
+
+        finalParts.push(...textParts);
+      } else {
+        finalParts.push(part);
+      }
     });
 
-    // Highlight numbers and percentages
-    highlighted = highlighted.replace(
-      /(\d+(\.\d+)?%?)/g,
-      `<span class="font-bold text-gray-900">$1</span>`
-    );
-
-    return <span dangerouslySetInnerHTML={{ __html: highlighted }} />;
+    return <span>{finalParts}</span>;
   }
 
   return (
@@ -52,10 +115,7 @@ export default function ExperiencePage() {
 
         <div className="space-y-6">
           {ExperienceData.map((exp, index) => (
-            <div
-              className="border-l-4 border-blue-200 pl-6 pb-6"
-              key={index}
-            >
+            <div className="border-l-4 border-blue-200 pl-6 pb-6" key={index}>
               <div className="flex justify-between items-start mb-2">
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800">

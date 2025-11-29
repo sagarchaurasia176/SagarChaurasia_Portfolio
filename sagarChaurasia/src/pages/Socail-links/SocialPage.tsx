@@ -33,7 +33,7 @@ export default function SocialPage() {
             <span className="font-inter">+91 7988595603</span>
           </a>
           <a
-            href="https://drive.google.com/file/d/1oIah83fJx0PeTtXdjVTsEVbnUsRo9kcO/view"
+            href="https://drive.google.com/file/d/1XIFJGpiJUVb4aQRwbc5dKObrg4OTqZMj/view?usp=sharing"
             target="_blank"
             className="flex items-center gap-4 text-slate-700 hover:text-purple-600 transition-all duration-300 font-medium hover:bg-slate-50 p-2 rounded-lg"
           >

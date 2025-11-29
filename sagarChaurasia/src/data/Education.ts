@@ -7,7 +7,7 @@ const education = [
     field: "Computer Science and Engineering",
     startDate: "Aug 2023",
     endDate: "Jun 2026",
-    grade: "9.00",
+    CGPA: "8.63",
     skills: [
       "Data Structures",
       "Object-Oriented Programming",
@@ -24,7 +24,7 @@ const education = [
     field: "Computer Science and Engineering",
     startDate: "Dec 2020",
     endDate: "Jul 2023",
-    grade: "8.0",
+    Grade: "78.5%",
     skills: [
       "Data Structures",
       "Object-Oriented Programming",

@@ -1,22 +1,18 @@
-import {Info, BookOpen, StickyNote, Projector, Terminal,FolderRoot, Folder } from "lucide-react";
+import {Info, BookOpen, Projector, Terminal,FolderRoot, Folder } from "lucide-react";
 
 export const Menubar = [
     {
         title: "My Blog",
         icon: BookOpen,
-        link: "https://dops.dev-saga.in/"
-    },
+link: "https://dops.dev-saga.in/",
+        target: "_blank"
+        },
     {
         title: "About",
         icon: Info,
         link: "#About"  
     },
  
-    {
-        title: "Certificates",
-        icon: StickyNote,
-        link: "#certificates"
-    },
     {
         title: "skills",
         icon: Projector,
