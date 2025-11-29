@@ -27,8 +27,8 @@ export default function EducationPage() {
               <p className="text-gray-500 text-sm">
                 {edu.startDate} - {edu.endDate}
               </p>
-              {edu.grade && (
-                <p className="text-gray-600 text-sm">Grade: {edu.grade}</p>
+              {edu.Grade && (
+                <p className="text-gray-600 text-sm">Grade: {edu.Grade}</p>
               )}
 
               {edu.skills && edu.skills.length > 0 && (

@@ -5,26 +5,19 @@ export default function About() {
 
     return (
     <>
-      <section id="About" className=" text-black p-8 mt-8 rounded">
+      <section id="About" className="text-black p-8 mt-8 mx-4 border border-gray-300 rounded-lg shadow-sm">
         <h2 className="text-2xl font-bold mb-4">About</h2>
         {/* create a simple line */}
         <hr className="border-gray-300 my-4" />
-        <p className="text-md">
-          I am currently working at Volga_Infosys as a Specialist FullStack
-          Developer, where I am recognized for my ability to solve problems
-          quickly and deliver efficient solutions.
+        <p className="text-md leading-relaxed">
+          <strong>Remote Full Stack Developer</strong> from <strong>Punjab, India</strong> with experience building and shipping <strong>3+ high-quality web applications</strong> using <strong>Next.js</strong> and the <strong>MERN stack</strong>.
           {!less ? (
             <>
               <span>
-                Over the course of my work, I have successfully built and
-                deployed three major projects leveraging the MERN stack, Docker,
-                and Next.js. Beyond my professional role, I have also developed
-                two personal Chrome extensions, both of which have been
-                well-received by users and hold an impressive 4.5-star rating on
-                the Chrome Web Store.
+                I've deployed client projects on <strong>Apache Web Server</strong> with secure configurations and developed a complete <strong>MERN-based Admin Dashboard</strong> used daily by <strong>50+ employees</strong>. My work focuses on delivering <strong>fast, responsive, and user-friendly experiences</strong>.
               </span>
               <button
-                className="text-blue-500 ml-2"
+                className="text-blue-500 ml-2 hover:text-blue-700"
                 onClick={() => setLess(true)}
               >
                 Read more
@@ -33,19 +26,10 @@ export default function About() {
           ) : (
             <>
               <span>
-                Over the course of my work, I have successfully built and
-                deployed three major projects leveraging the MERN stack, Docker,
-                and Next.js. Beyond my professional role, I have also developed
-                two personal Chrome extensions, both of which have been
-                well-received by users and hold an impressive 4.5-star rating on
-                the Chrome Web Store. I am passionate about building scalable,
-                high-performance applications and constantly look for
-                opportunities to take on challenging problems. My quick
-                problem-solving skills and hands-on experience make me a
-                valuable contributor to any team I work with.
+                I've deployed client projects on <strong>Apache Web Server</strong> with secure configurations and developed a complete <strong>MERN-based Admin Dashboard</strong> used daily by <strong>50+ employees</strong>. My work focuses on delivering <strong>fast, responsive, and user-friendly experiences</strong>. I collaborate closely with <strong>senior developers</strong> to translate requirements into <strong>scalable solutions</strong> and have optimized system performance, improving <strong>page load speeds by 40%</strong> and reducing <strong>API latency by 30%</strong> through caching and code improvements.
               </span>
               <button
-                className="text-blue-500 ml-2"
+                className="text-blue-500 ml-2 hover:text-blue-700"
                 onClick={() => setLess(false)}
               >
                 Show less
