@@ -34,6 +34,7 @@ export default function ExperiencePage() {
     // Split text into parts and highlight keywords
     const parts = [];
     let currentText = text;
+    console.log(currentText)
     let lastIndex = 0;
 
     // Create a regex pattern for all keywords

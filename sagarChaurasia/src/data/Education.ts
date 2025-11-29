@@ -24,7 +24,7 @@ const education = [
     field: "Computer Science and Engineering",
     startDate: "Dec 2020",
     endDate: "Jul 2023",
-    Grade: "78.5%",
+    Grade: "78%",
     skills: [
       "Data Structures",
       "Object-Oriented Programming",
