@@ -11,7 +11,7 @@ import Footer from "./components/layout/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-surface-950 text-surface-900 dark:text-surface-100 transition-colors duration-300">
+    <div className="min-h-screen p-1 bg-white dark:bg-surface-950 text-surface-900 dark:text-surface-100 transition-colors duration-300">
       <Navbar />
       <main>
         <Hero />
