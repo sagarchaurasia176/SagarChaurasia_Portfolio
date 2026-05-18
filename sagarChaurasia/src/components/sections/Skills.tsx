@@ -1,6 +1,7 @@
 import { skillCategories } from "../../data/skills";
 import SectionHeading from "../ui/SectionHeading";
 
+
 export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-surface-50 dark:bg-surface-900">
