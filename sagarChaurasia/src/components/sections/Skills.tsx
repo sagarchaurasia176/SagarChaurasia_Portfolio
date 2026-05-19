@@ -1,7 +1,8 @@
 import { skillCategories } from "../../data/skills";
 import SectionHeading from "../ui/SectionHeading";
 
-
+// skills
+// functionality  added
 export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-surface-50 dark:bg-surface-900">
@@ -12,7 +13,7 @@ export default function Skills() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((category) => (
+          {skillCategories.map((category : any) => (
             <div
               key={category.title}
               className="p-6 rounded-xl bg-white dark:bg-surface-800 border border-surface-200 dark:border-surface-700 hover:border-surface-300 dark:hover:border-surface-600 hover:shadow-sm transition-all duration-200"
@@ -21,7 +22,7 @@ export default function Skills() {
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-2.5">
-                {category.skills.map((skill) => (
+                {category.skills.map((skill : any) => (
                   <div
                     key={skill.name}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-50 dark:bg-surface-700/50 border border-surface-100 dark:border-surface-600 hover:border-surface-300 dark:hover:border-surface-500 transition-colors duration-200"
