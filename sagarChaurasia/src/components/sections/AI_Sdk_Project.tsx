@@ -1,19 +1,20 @@
 import { Github, ExternalLink } from "lucide-react";
-import { projects } from "../../data/projects";
+// import { projects } from "../../data/projects";
 import SectionHeading from "../ui/SectionHeading";
-import AI_Sdk_Projects from "./AI_Sdk_Project";
+import { AI_projects } from "../../data/projects";
 
-export default function Projects() {
+// function
+export default function AI_Sdk_Projects() {
   return (
     <section id="projects" className="py-20 bg-white dark:bg-surface-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeading
-          title="Featured Projects"
+          title="AI_SDK Projects"
           subtitle="A selection of projects I've built and shipped"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project) => (
+          {AI_projects.map((project) => (
             <div
               key={project.id}
               className="group rounded-xl border border-surface-200 dark:border-surface-700 bg-white dark:bg-surface-800 overflow-hidden hover:border-surface-300 dark:hover:border-surface-600 hover:shadow-md dark:hover:shadow-surface-900/50 transition-all duration-200"
@@ -84,8 +85,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      {/* ai-sdk Proect */}
-      <AI_Sdk_Projects/>
     </section>
   );
 }
