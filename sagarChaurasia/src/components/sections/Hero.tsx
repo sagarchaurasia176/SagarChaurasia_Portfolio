@@ -71,7 +71,7 @@ export default function Hero() {
               </Button>
               <Button
                 as="a"
-                href="https://drive.google.com/file/d/17yq35LprNPdwO_RR7H1nba_8QcJ7fq4X/view?usp=sharing"
+                href="https://drive.google.com/file/d/1cmUwzE_srf3KIZgGdb2TAAALr0a_hLfj/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="ghost"
@@ -88,7 +88,7 @@ export default function Hero() {
                 Find me on
               </span>
               <div className="h-px w-8 bg-surface-300 dark:bg-surface-700" />
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center justify-center">
                 <a
                   href="https://github.com/sagarchaurasia176"
                   target="_blank"
@@ -107,6 +107,7 @@ export default function Hero() {
                 >
                   <Linkedin size={20} />
                 </a>
+                
                 <a
                   href="https://leetcode.com/u/chaurasiasagar/"
                   target="_blank"

@@ -13,16 +13,7 @@ export const experienceData: ExperienceItem[] = [
       "Optimized system performance — improved page load speeds by 40% and reduced API latency by 30% through caching and code improvements.",
     ],
   },
-  {
-    companyName: "A2IT",
-    jobTitle: "Frontend Developer",
-    location: "On-site",
-    duration: "July 2021 | Punjab, India",
-    responsibilities: [
-      "Developed user-friendly web interfaces using HTML, CSS, and JavaScript with a focus on responsive design.",
-      "Collaborated with backend developers to integrate RESTful APIs and improved page load times by 25%.",
-    ],
-  },
+
   {
     companyName: "Naplytics",
     jobTitle: "Freelancer",
@@ -31,6 +22,16 @@ export const experienceData: ExperienceItem[] = [
     responsibilities: [
       "Deployed frontend and backend applications on company servers with secure Apache configurations.",
       "Received consistently positive feedback from clients for delivering high-quality solutions on time.",
+    ],
+  },
+    {
+    companyName: "A2IT",
+    jobTitle: "Frontend Developer",
+    location: "On-site",
+    duration: "July 2022 | Punjab, India",
+    responsibilities: [
+      "Developed user-friendly web interfaces using HTML, CSS, and JavaScript with a focus on responsive design.",
+      "Collaborated with backend developers to integrate RESTful APIs and improved page load times by 25%.",
     ],
   },
 ];
